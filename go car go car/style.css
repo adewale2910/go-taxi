@@ -1,0 +1,292 @@
+ *{ 
+    margin: 0;
+    padding: 0;
+}
+#label
+{
+    position: absolute;
+    left: 90px;
+    bottom: 150px;
+    font-size: larger;
+    background-color: black;
+    color: aqua;
+
+}
+
+.bird2
+{
+  
+  position: absolute;
+  left: 400px;
+  animation: bird;
+  animation: bird 50s linear infinite ;
+  
+
+}
+.bird2 img{
+    width: 200px;
+    height: 200px;
+    
+}
+.air
+{
+    position: absolute;
+    left: 60px;
+    animation-name:air;
+    animation: air 10s linear infinite;
+}
+@keyframes air
+{
+    100%{
+        transform: translate(2000px);
+
+    }
+}
+.bird
+{
+  /* bottom: 10px; */
+  position: absolute;
+  left: 30px;
+  animation: bird;
+  animation: bird 50s linear infinite ;
+
+}
+@keyframes bird
+{
+    0%
+    {
+transform: translate(-500px);
+    }
+    100%{
+        transform: translatex(300px);
+
+    }
+}
+
+.hero
+{
+    height: 100vh;
+    width: 120%;
+    background-image: url(sky.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+    
+}
+.highway
+{
+    height: 200px;
+    width: 500%;
+    display: block;
+    background-image: url(highway2.jfif);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: highway 5s linear infinite ;
+}
+ @keyframes highway
+{
+    100%{
+        transform: translatex(-3000px);
+
+    }
+} 
+.city 
+{
+    height: 250px;
+    width: 500%;
+    background-image: url();
+    position: absolute;
+    bottom: 200px;
+    left: o;
+    right: 0;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-y;
+    animation: city 10s linear infinite;
+}
+@keyframes city
+{
+    100%{
+        transform: translatey(-1400px);
+
+    }
+}
+.car
+{
+  width: 400px;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 2;
+  animation: car1 10s linear infinite;
+}
+@keyframes car1
+{
+    0%
+    {
+        transform: translate(-1000px);
+    }
+    100%{
+        transform: translate(1000px);
+
+    }
+}
+.car img{
+    width: 100%;
+    
+    
+    
+    /* border: 2px solid red;  */
+    position: relative; 
+    
+}
+@keyframes car
+{
+    0%
+    {
+        transform: translate(-1500px);
+    }
+    100%{
+        transform: translate(900px);
+
+    }
+}
+@keyframes city
+{
+    100%{
+        transform: translateY(-1px);
+
+    }
+    50%{
+        transform: translateY(-1400px);
+
+    }
+    0%{
+        transform: translateY(-1400px);
+
+    }
+}
+.wheel
+{
+    left: 50%;
+    bottom: 50px;
+    transform: translatey(-50%);
+    position: absolute;
+    z-index: 2;
+    
+    
+    
+}
+.wheel img{
+    width: 65px;
+    height: 65px;
+    
+    animation: wheel2 1s linear infinite;
+    
+}
+.back-wheel
+{
+    left: -135px;
+    position: absolute;
+}
+.front-wheel
+{
+    left: 7px;
+    position: absolute;
+}
+@keyframes wheel
+{
+   100%{
+    transform: rotate(360deg) ;
+   
+   }
+  }
+
+ 
+  .scar
+{
+  width: 400px;
+  left: 20%;
+  
+  bottom: 10px;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 2;
+  animation: car 13s linear infinite;
+
+}
+.scar img{
+    width: 100%;
+
+}
+.wheel2
+{
+    left: 62%;
+    bottom: 78px;
+    position: absolute;
+    z-index: 2;
+    
+   
+}
+.wheel2 img{
+    width: 55px;
+    height: 55px;
+    animation: wheel2 1s linear infinite;
+    
+       
+}
+.back-wheel2
+{
+    left: -188px;
+    position: absolute;
+    /* display: flex; */
+}
+
+.front-wheel2
+{
+    left: 20px !important;
+    
+    position: absolute;
+}
+@keyframes wheel2
+{
+   100%{
+    transform: rotate(360deg);
+    /* transform: translatex(600px); */
+   }
+  }
+  .walk{
+    height: 20px;
+    width: 20px;
+    left: 80px;
+    position: absolute;
+    
+    margin-top: 280px;
+    z-index: 1;
+
+  }
+  .walk img
+  {
+    width: 500%;
+    left: 280px;
+    /* position: absolute; */
+    height: 1000%;
+    animation: walking 13s linear infinite;
+}
+@keyframes walking
+{
+    0%
+    {
+        transform: translate(-500px);
+    }
+   100%{
+    transform: translate(1300px);
+  
+   }
+  }
